@@ -7,6 +7,7 @@ const nextConfig = {
     unoptimized: true,
     minimumCacheTTL: 60,
   },
+  basePath: !debug ? "/gallery" : "",
   assetPrefix: !debug ? "/gallery/" : "",
 };
 
