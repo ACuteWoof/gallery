@@ -13,11 +13,11 @@ function Hero() {
     return <div className="h-[90vh] hero-bg-image">
         <div className="h-full w-full bg-gradient-to-b from-transparent to-cinder-950 flex flex-col justify-center items-center">
             <div className="text-white text-center">
-                <h1 ref={ref} className={"text-6xl font-bold flex " + major_mono_display.className}><motion.div
+                <h1 ref={ref} className={"text-6xl lg:text-8xl font-bold flex flex-wrap gap-8 justify-center " + major_mono_display.className}><motion.div
                     initial={{ opacity: 0, x: -100 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
                     transition={transition}
-                >OBSEK{"\u00A0"}</motion.div><motion.div
+                >OBSEK</motion.div><motion.div
                     initial={{ opacity: 0, x: 100 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
                     transition={{ ...transition, delay: 0.5 }}
