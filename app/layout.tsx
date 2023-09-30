@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Major_Mono_Display } from 'next/font/google'
+import { Roboto_Mono } from 'next/font/google'
 
-const major_mono_display = Major_Mono_Display({ subsets: ['latin'], weight: ['400'] })
+const roboto_mono = Roboto_Mono({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata: Metadata = {
   title: "Obsek Astrophotography Gallery",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={major_mono_display.className}>{children}</body>
+      <body className={roboto_mono.className}>{children}</body>
     </html>
   )
 }
