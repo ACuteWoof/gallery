@@ -5,8 +5,9 @@ const nextConfig = {
   output: "export",
   images: {
     unoptimized: true,
+    minimumCacheTTL: 60,
   },
-  assetPrefix: !debug ? "/blog/" : "",
+  assetPrefix: !debug ? "/gallery/" : "",
 };
 
 module.exports = nextConfig;
