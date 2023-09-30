@@ -12,10 +12,10 @@ export default function Home() {
           © 2023 ACuteWoof. All Rights Reserved.
         </span>
         <span className="flex gap-6">
-          <Link href='https://acutewoof.is-a.dev' className="hover:text-white">
+          <Link href='https://acutewoof.is-a.dev' target="_blank" className="hover:text-white">
             ACuteWoof
           </Link>
-          <Link href='https://instagram.com/obsek.astrophoto' className="hover:text-white">
+          <Link href='https://instagram.com/obsek.astrophoto' target="_blank" className="hover:text-white">
             Instagram
           </Link>
         </span>
