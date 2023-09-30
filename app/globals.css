@@ -4,7 +4,7 @@
 
 @layer components {
   .hero-bg-image {
-    background-image: url("/bg2.jpeg");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/obsek-gallery.appspot.com/o/img%2F0001%2F1000004198-01.jpeg?alt=media");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
