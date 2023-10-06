@@ -1,7 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto_Mono } from 'next/font/google'
-import Script from 'next/script';
 
 const roboto_mono = Roboto_Mono({ subsets: ['latin'], weight: ['400'] })
 
@@ -18,14 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-B1V8D3CWHF"></Script>
-<Script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1V8D3CWHF"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-B1V8D3CWHF');
-</Script>
+</script>
       <body className={roboto_mono.className}>{children}</body>
     </html>
   )
