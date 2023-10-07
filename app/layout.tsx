@@ -20,8 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto_mono.className}>{children}</body>
 
-      <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-J9ZJSMTD62"></Script>
-      <Script strategy='afterInteractive' id='google-analytics'>
+      <Script id='google-analytics'>
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -29,6 +28,7 @@ export default function RootLayout({
 
         gtag('config', 'G-J9ZJSMTD62');`}
       </Script>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-J9ZJSMTD62"></Script>
 
     </html>
   )
