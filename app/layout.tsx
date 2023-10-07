@@ -1,7 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Roboto_Mono } from 'next/font/google'
-import Script from 'next/script'
+import Head from 'next/head'
+import { GA_TRACKING_ID } from './lib/gtag'
 
 const roboto_mono = Roboto_Mono({ subsets: ['latin'], weight: ['400'] })
 
@@ -18,18 +19,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      /></head>
       <body className={roboto_mono.className}>{children}</body>
-
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-J9ZJSMTD62"></Script>
-      <Script id='google-analytics'>
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-J9ZJSMTD62');`}
-      </Script>
-
     </html>
   )
 }
