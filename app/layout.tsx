@@ -20,14 +20,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto_mono.className}>{children}</body>
 
-      <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-B1V8D3CWHF"></Script>
+      <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-J9ZJSMTD62"></Script>
       <Script strategy='afterInteractive' id='google-analytics'>
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-B1V8D3CWHF');`}
+        gtag('config', 'G-J9ZJSMTD62');`}
       </Script>
 
     </html>
