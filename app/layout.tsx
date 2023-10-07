@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto_mono.className}>{children}</body>
 
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-J9ZJSMTD62"></Script>
       <Script id='google-analytics'>
         {`
         window.dataLayer = window.dataLayer || [];
@@ -28,7 +29,6 @@ export default function RootLayout({
 
         gtag('config', 'G-J9ZJSMTD62');`}
       </Script>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-J9ZJSMTD62"></Script>
 
     </html>
   )
