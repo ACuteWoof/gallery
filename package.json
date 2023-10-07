@@ -10,19 +10,18 @@
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
-    "next": "latest",
-    "firebase": "latest",
+    "next": "^13.5.4",
     "react": "latest",
     "react-dom": "latest",
     "react-intersection-observer": "^9.5.2"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
+    "@types/node": "^20.8.3",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
     "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "^13.5.4",
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"

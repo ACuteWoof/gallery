@@ -1,7 +1,9 @@
+"use client"
+
 import Hero from "./sections/hero";
 import Gallery from "./sections/gallery"
 import Link from "next/link";
-
+import { useEffect } from "react";
 
 export default function Home() {
   return (
